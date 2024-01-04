@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="images/index.ico" type="image/x-icon">
+ 
+    <!-- CSS: Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS: Bootstrap v-5.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+     
+<body> 
+
+             <!-- space -->
+                <table cellspacing="8" cellpadding="8" style=" border:2px DASHED #FF7DBE;background-color: #FF7DBE" width=600><tbody><tr><td align="center" valign="middle" style="background-color: #FF9DCE"><table border="0" cellspacing="8" cellpadding="8" width=600 style=" background-color: #FFBFDF"><tbody><tr><td align="center" style=" border:2px DASHED #FFDFEF;background-color: #FFDFEF"><font size=2>
+                <div class="row justify-content-center pt-5">
+                    <div class="col-lg-7 col-md-10">
+                        <h3 class="fw-normal text-center mb-5 border-bottom pb-2"><strong>บันทึกการจัดการสินค้า</strong></h3>
+ 
+                        <form class="form_overlay" method="POST" accept-charset="UTF-8" autocomplete="off" name="contact"> 
+                                <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="input_overlay">
+									<input type="date" id="birthday"  name="Date" onchange="selectBirthday()" class="form-control" required autocomplete="off">
+								   
+                                    </div>									
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="input_overlay" class="form-control" required autocomplete="off">
+									
+									<select name="Time" id="Time">
+									<option value="ไม่ได้เลือกเวลา">--ให้เลือกเวลาการจัดงาน --</option>
+									<option value="รอบเช้า">รอบเช้า</option>
+									<option value="รอบบ่าย">รอบบ่าย</option>								
+									</select>                               
+                                    </div>
+                                </div>
+								
+                                <div class="col-lg-6">
+                                    <div class="input_overlay">
+                                        <label for="Route" class="lable"><br><strong>Route</strong></label>
+                                        <input type="text" name="Route" class="form-control" required autocomplete="off" placeholder="กรุณากรอกRoute"></br>
+                                    </div>
+                                </div>
+								
+
+                                <div class="col-12">
+                                    <div class="input_overlay">
+                                        <br><label for="ชื่อพนักงาน" class="lable"><strong>Picker (ชื่อพนักงาน)</strong></label>
+                                        <input type="text" name="ชื่อพนักงาน" class="form-control" required autocomplete="off" placeholder="กรุณากรอกชื่อพนักงาน"></br>
+                                    </div>
+                                </div>
+								
+														
+								<div class="col-lg-12">
+                                    <div class="input_overlay" class="form-control" required autocomplete="off">
+									<label for="Vendor" style="color: red;"><strong>Vendor</strong></label>
+									<br>
+									<select name="Vendor" id="Vendor" class="col-lg-7">
+									<option value="ไม่มีVender">Vendor Code </option>
+									<option value="70159">70159</option>
+									<option value="72683">72683</option>	
+									<option value="80211">80211</option>
+									<option value="72832">72832</option>
+									<option value="72955">72955</option>
+									<option value="72379">72379</option>
+									<option value="72962">72962</option>
+									<option value="72898">72898</option>
+									<option value="72532">72532</option>
+									<option value="73906">73906</option>	
+									<option value="73698">73698</option>
+									<option value="73746">73746</option>
+									<option value="80009">80009</option>	
+									<option value="80194">80194</option>
+									<option value="80233">80233</option>	
+									<option value="80317">80317</option>
+									<option value="80386">80386</option>	
+									<option value="73927">73927</option>
+									<option value="80226">80226</option>	
+									<option value="70027">70027</option>
+									<option value="74352">74352</option>	
+									<option value="73904">73904</option>
+									<option value="2044167">2044167</option>	
+									<option value="2044167">2044167</option>
+									<option value="73850">73850</option>	
+									<option value="71522">71522</option>
+									<option value="74239">74239</option>	
+									<option value="2027048">2027048</option>
+									<option value="2041632">2041632</option>	
+									<option value="74211">74211</option>
+									<option value="74360">74360</option>
+									<option value="72814">72814</option>	
+									<option value="73466">73466</option>
+									<option value="73201">73201</option>	
+									<option value="73064">73064</option>
+									<option value="73338">73338</option>
+									<option value="73454">73454</option>	
+									<option value="80016">80016</option>
+									<option value="2027946">2027946</option>	
+									<option value="73890">73890</option>	
+									</select>
+									</br>									
+                                    </div>
+                                </div>
+								
+	<div class="col-lg-12">
+    <div class="input_overlay" class="form-control" required autocomplete="off">
+	<label for="Supplier" style="color: red;"><strong>Click เลือก Supplier</strong></label>
+	<br>		 
+							
+      <input name="Supplier" type="button" value="C&W"  onclick="insertText('txt1', 'C&W+');">
+	  <input name="Supplier"type="button" value="S.T." onclick="insertText('txt1', 'S.T.+');">
+	   <input name="Supplier"type="button" value="SRIFA"  onclick="insertText('txt1', 'SRIFA+');">
+	  <input name="Supplier"type="button" value="GOLDBREAD" onclick="insertText('txt1', 'GOLDBREAD+');">
+	   <input name="Supplier"type="button" value="K.P. PROUD"  onclick="insertText('txt1', 'K.P. PROUD+');">
+	  <input name="Supplier"type="button" value="ณัฐ โพธิ์จันทร์" onclick="insertText('txt1', 'ณัฐ โพธิ์จันทร์+');">
+	   <input name="Supplier"type="button" value="N&N Fruit"  onclick="insertText('txt1', 'N&N Fruit+');">
+	  <input name="Supplier"type="button" value="เกียงศักดิ์ พิพิธภัณฑ์" onclick="insertText('txt1', 'เกียงศักดิ์ พิพิธภัณฑ์+');">
+	   <input name="Supplier"type="button" value="คิง ฟรุทส์ บจก."  onclick="insertText('txt1', 'คิง ฟรุทส์ บจก.+');">
+	  <input name="Supplier"type="button" value="ดี สตาร์ ฟรุต บจก." onclick="insertText('txt1', 'ดี สตาร์ ฟรุต บจก.+');">
+	   <input name="Supplier"type="button" value="โบว์เบเกอรี่เฮ้าส์ บจก. เบลินี่"  onclick="insertText('txt1', 'โบว์เบเกอรี่เฮ้าส์ บจก. เบลินี่+');">
+	  <input name="Supplier"type="button" value="บริษัท บราวน์โว่ คอร์ปอเรชั่น จำกัด" onclick="insertText('txt1', 'บริษัท บราวน์โว่ คอร์ปอเรชั่น จำกัด+');">
+	   <input name="Supplier"type="button" value="ซันเมอรี่ บจก."  onclick="insertText('txt1', 'ซันเมอรี่ บจก.+');">
+	  <input name="Supplier"type="button" value="ไทเกอร์ เวลธ" onclick="insertText('txt1', 'ไทเกอร์ เวลธ+');">
+	   <input name="Supplier"type="button" value="ศรีฟ้าโฟรเซนฟู้ด (คัดสรร)"  onclick="insertText('txt1', 'ศรีฟ้าโฟรเซนฟู้ด (คัดสรร)+');">
+	  <input name="Supplier"type="button" value="คณะบุคคล คณะกรรมการโครงการสวนดุสิต โฮม" onclick="insertText('txt1', 'คณะบุคคล คณะกรรมการโครงการสวนดุสิต โฮม+');">
+	   <input name="Supplier"type="button" value="บี.อี.ฟู้ดส์ บจก."  onclick="insertText('txt1', 'บี.อี.ฟู้ดส์ บจก.+');">
+	  <input name="Supplier"type="button" value="สยามรุ่งเรือง ฟู้ด แอนด์ เบเกอรี่ บจก." onclick="insertText('txt1', 'สยามรุ่งเรือง ฟู้ด แอนด์ เบเกอรี่ บจก.+');">
+	   <input name="Supplier"type="button" value="เอ็มบีเอ โปร ฟู๊ด บจก."  onclick="insertText('txt1', 'เอ็มบีเอ โปร ฟู๊ด บจก.+');">
+	  <input name="Supplier"type="button" value="ร้านพายเนยสด" onclick="insertText('txt1', 'ร้านพายเนยสด+');">
+	  	   <input name="Supplier"type="button" value="บจก.จอยเก็ตเธอร์"  onclick="insertText('txt1', 'บจก.จอยเก็ตเธอร์+');">
+	  <input name="Supplier"type="button" value="ซีพีเอฟ เทรดดิ้ง บจก." onclick="insertText('txt1', 'ซีพีเอฟ เทรดดิ้ง บจก.+');">
+	   <input name="Supplier"type="button" value="แกรนด์ อินเตอร์ ฟูดส์ บจก."  onclick="insertText('txt1', 'แกรนด์ อินเตอร์ ฟูดส์ บจก.+');">
+	  <input name="Supplier"type="button" value="แกรนด์ อินเตอร์ ฟูดส์ บจก. (คัดสรร)" onclick="insertText('txt1', 'แกรนด์ อินเตอร์ ฟูดส์ บจก. (คัดสรร)+');">
+	   <input name="Supplier"type="button" value="คิวบิก ฟู้ดส์ แอนด์ แคทเทอริ่ง บจก."  onclick="insertText('txt1', 'คิวบิก ฟู้ดส์ แอนด์ แคทเทอริ่ง บจก.+');">
+	  <input name="Supplier"type="button" value="บจก.ตะวันพืชผล" onclick="insertText('txt1', 'บจก.ตะวันพืชผล+');">
+	   <input name="Supplier"type="button" value="ซีพีเอฟ โกลบอล ฟู้ด โลซูชั่น"  onclick="insertText('txt1', 'ซีพีเอฟ โกลบอล ฟู้ด โลซูชั่น+');">
+	  <input name="Supplier"type="button" value="บมจ. เอ็นเอสแอล ฟู้ดส์" onclick="insertText('txt1', 'บมจ. เอ็นเอสแอล ฟู้ดส์+');">
+	  	   <input name="Supplier"type="button" value="บจ. เซละเบิล เฟรชฟรุตส์"  onclick="insertText('txt1', 'บจ. เซละเบิล เฟรชฟรุตส์+');">
+	  <input name="Supplier"type="button" value="บริษัท สิงโตทอง การค้า จำกัด" onclick="insertText('txt1', 'บริษัท สิงโตทอง การค้า จำกัด+');">
+	  	   <input name="Supplier"type="button" value="บจ.ภูเวียงเวจแอนด์ฟรุต"  onclick="insertText('txt1', 'บจ.ภูเวียงเวจแอนด์ฟรุต+');">
+	  <input name="Supplier"type="button" value="CPRAM" onclick="insertText('txt1', 'CPRAM+');">
+	  	   <input name="Supplier"type="button" value="ซีวิไลซเซชั่น"  onclick="insertText('txt1', 'ซีวิไลซเซชั่น+');">
+	  <input name="Supplier"type="button" value="T.A.C" onclick="insertText('txt1', 'T.A.C+');">
+	  <input name="Supplier"type="button" value="อมตะ เฟรช อะโกร บจก" onclick="insertText('txt1', 'อมตะ เฟรช อะโกร บจก&nbsp;+&nbsp;');">
+	  <input name="Supplier"type="button" value="แพนโนชั่น บจก" onclick="insertText('txt1', 'แพนโนชั่น บจก+');">
+	  <input name="Supplier"type="button" value="ช่อทิพย์ อุฮุ่ย" onclick="insertText('txt1', 'ช่อทิพย์ อุฮุ่ย+');">
+	  <input name="Supplier"type="button" value="ขนมแม่เอย - เปี๊ยะ แอนด์ พาย (2003) บจก." onclick="insertText('txt1', 'ขนมแม่เอย - เปี๊ยะ แอนด์ พาย (2003) บจก.&nbsp;+&nbsp;');">
+	  <input name="Supplier"type="button" value="บจ.ฮั่วเซ่งฮงติ่มซำ" onclick="insertText('txt1', 'บจ.ฮั่วเซ่งฮงติ่มซำ&nbsp;+&nbsp;');">
+	  <input name="Supplier"type="button" value="เอส.พี.เอส. ฟรุ๊ตส์ บจก." onclick="insertText('txt1', 'เอส.พี.เอส. ฟรุ๊ตส์ บจก.&nbsp;+&nbsp;');">
+	   <textarea name="Supplier" id="txt1" cols ="50" rows ="10" maxlength ="100"></textarea>
+	   
+									</br>									
+                                    </div>
+                                </div>
+									</br>									
+                                    </div>
+                                </div>
+							 
+							 
+                                 
+                                <div class="col-12 text-end">
+                                <button type="submit"    class="btn btn-primary mt-3" >บันทึกข้อมูล</button>
+								<a href="https://script.google.com/macros/s/AKfycbxBKuSgG2F7OmNS0mdNfunR7XavuWh92DlCkZwyfxSf2oXET3bSG5gqOPzWreoqXs2cQw/exec"><font style="color:#00000"><h1>ค้นหาข้อมูล</h1></font></a>
+								
+                                </div>
+								
+                                <p id="demo";></p>
+                                </div>
+								
+                             
+                        </form>
+                    </div>
+                </div>
+				</td></tr></tbody></table></td></tr></tbody></table>
+ 
+
+    </main>
+ 
+        <script >
+      function insertText(elemID, text,)
+      {
+        var elem = document.getElementById(elemID);
+        elem.innerHTML += text;
+		
+      }
+    </script>  
+     <script>
+    function selectBirthday() {
+        var birthday = document.getElementById("birthday").value;
+        document.getElementById("result").innerHTML = "วัน เดือน ปีเกิด คือ "+birthday;
+    }
+</script>
+ 
+   <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw5uWnW9y4Q7IjsrE_rnfgYcaCw_8qm3sjh8zaBjrWcgGJH9XGOmB3c1qv3qtBFWsBUOw/exec'
+            const form = document.forms['contact']
+            
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => document.getElementById("demo").innerHTML = "<div class='alert alert-primary' role='alert' ><b><h1>ข้อมูลบันทึกเรียบร้อย</h1></b>   </div>",contact.reset())
+                .catch(error => console.error('Error!', error.message))
+            })
+			
+    </script>
+ 
+           
+ </body>
+
+ </html>
